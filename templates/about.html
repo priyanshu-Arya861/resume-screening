@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ResumeAI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e2937;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        .navbar {
+            background: var(--dark);
+        }
+
+        .section-box {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(37, 99, 235, 0.1);
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #60a5fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+        .timeline-step {
+            border-left: 3px solid #2563eb;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark py-3">
+    <div class="container">
+        <span class="navbar-brand fw-bold fs-4">ResumeAI</span>
+        <div>
+            <a href="/" class="btn btn-outline-light btn-sm">Home</a>
+            <a href="/about" class="btn btn-primary btn-sm">About</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+
+    <!-- Intro -->
+    <div class="section-box text-center mb-5">
+        <h1 class="fw-bold">About ResumeAI</h1>
+        <p class="lead text-muted mt-3">
+            ResumeAI is an AI-powered resume screening system that helps recruiters identify the best candidates
+            using Natural Language Processing (NLP) and Machine Learning techniques.
+        </p>
+    </div>
+
+    <!-- What is this -->
+    <div class="section-box mb-5">
+        <h3 class="fw-bold mb-3">🔍 What is ResumeAI?</h3>
+        <p class="text-muted">
+            ResumeAI analyzes resumes and compares them with job descriptions using intelligent algorithms.
+            It converts text into numerical vectors using TF-IDF and calculates similarity using cosine similarity.
+            The system then ranks candidates based on how well their resumes match the job requirements.
+        </p>
+    </div>
+
+    <!-- Features -->
+    <div class="mb-5">
+        <h3 class="fw-bold text-center mb-4">🚀 Key Features</h3>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="bi bi-cpu"></i></div>
+                    <h5>AI Resume Matching</h5>
+                    <p class="text-muted">Uses ML algorithms to match resumes with job descriptions.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="bi bi-file-earmark-text"></i></div>
+                    <h5>PDF & DOCX Support</h5>
+                    <p class="text-muted">Automatically extracts text from resumes in multiple formats.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="bi bi-bar-chart"></i></div>
+                    <h5>Match Score</h5>
+                    <p class="text-muted">Displays percentage match between resume and job role.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="bi bi-check-circle"></i></div>
+                    <h5>Skill Matching</h5>
+                    <p class="text-muted">Shows matched and missing skills clearly.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="bi bi-trophy"></i></div>
+                    <h5>Candidate Ranking</h5>
+                    <p class="text-muted">Ranks candidates based on highest score.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="bi bi-lightning-charge"></i></div>
+                    <h5>Fast Processing</h5>
+                    <p class="text-muted">Analyzes multiple resumes in seconds.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="section-box mb-5">
+        <h3 class="fw-bold mb-4">⚙️ How It Works</h3>
+
+        <div class="timeline-step">
+            <h6>Step 1: Upload Resume</h6>
+            <p class="text-muted">User uploads resumes (PDF/DOCX format).</p>
+        </div>
+
+        <div class="timeline-step">
+            <h6>Step 2: Enter Job Description</h6>
+            <p class="text-muted">Provide job requirements and skills.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h6>Step 3: AI Processing</h6>
+            <p class="text-muted">System extracts text and applies NLP techniques.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h6>Step 4: Matching & Ranking</h6>
+            <p class="text-muted">Candidates are scored and ranked automatically.</p>
+        </div>
+    </div>
+
+    <!-- Tech stack -->
+    <div class="section-box text-center mb-5">
+        <h3 class="fw-bold mb-3">🧠 Technologies Used</h3>
+        <p class="text-muted">
+            Python • Flask • Machine Learning • NLP • TF-IDF • Cosine Similarity • Bootstrap
+        </p>
+    </div>
+
+    <!-- Button -->
+    <div class="text-center">
+        <a href="/" class="btn btn-primary btn-lg px-5">
+            Back to Resume Screening
+        </a>
+    </div>
+
+</div>
+
+<footer class="text-center py-4 text-muted small">
+    ResumeAI © 2026
+</footer>
+
+</body>
+</html>
